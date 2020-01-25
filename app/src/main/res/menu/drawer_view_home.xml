@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/profile" />
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@drawable/ic_notifications"
+        android:title="@string/notifications" />
+    <item
+        android:id="@+id/nav_privacy_policy"
+        android:icon="@drawable/ic_privacy_policy"
+        android:title="@string/privacy_policy" />
+    <item
+        android:id="@+id/nav_send_bus_image"
+        android:icon="@drawable/ic_send_bus_image"
+        android:title="@string/send_bus_image" />
+    <item
+        android:id="@+id/nav_suggest_new_bus"
+        android:icon="@drawable/ic_suggest_new_bus"
+        android:title="@string/suggest_new_bus" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/settings" />
+    <item
+        android:id="@+id/nav_feedback"
+        android:icon="@drawable/ic_feedback"
+        android:title="@string/feedback" />
+    <item
+        android:id="@+id/nav_rate_us"
+        android:icon="@drawable/ic_rate_us"
+        android:title="@string/rate_us" />
+    <item
+        android:id="@+id/nav_about"
+        android:icon="@drawable/ic_about"
+        android:title="@string/about" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/logout" />
+</menu>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff5500</color>
+    <color name="colorPrimary_transparent">#80FF5500</color>
+    <color name="colorPrimaryDark">#cc4300</color>
+    <color name="colorAccent">#cc4300</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white50">#80FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="dark_background">#FF424242</color>
+    <color name="light_background">#FFFFFFFF</color>
+    <color name="shadow_end_color">#03000000</color>
+    <color name="shadow_start_color">#37000000</color>
+
+    <color name="red">#ff0000</color>
+    <color name="orange">#ff5500</color>
+    <color name="blue">#0080ff</color>
+    <color name="cyan">#00c0ff</color>
+    <color name="transparent">#00FFFFFF</color>
+
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+</resources>

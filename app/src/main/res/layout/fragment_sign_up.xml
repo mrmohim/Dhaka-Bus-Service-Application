@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <ImageView
+        android:id="@+id/icon_main"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/icon_bus_colored"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icon_main" />
+
+    <TextView
+        android:id="@+id/errorMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Please enter all the fields."
+        android:textColor="@color/red"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/userEmail"
+        app:layout_constraintTop_toBottomOf="@+id/title_main" />
+
+    <TextView
+        android:id="@+id/userNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:text="First &amp; Last Name:"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toBottomOf="@+id/errorMsg" />
+
+    <EditText
+        android:id="@+id/userName"
+        style="@style/SignUpEditText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="Name (required)"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userNameHeader" />
+
+    <TextView
+        android:id="@+id/userEmailHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:text="Email:"
+        app:layout_constraintStart_toStartOf="@+id/userEmail"
+        app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        style="@style/SignUpEditText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="email@email.com (required)"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userEmailHeader" />
+
+    <TextView
+        android:id="@+id/userPasswordHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:text="Password:"
+        app:layout_constraintStart_toStartOf="@+id/userPassword"
+        app:layout_constraintTop_toBottomOf="@+id/userEmail" />
+
+    <EditText
+        android:id="@+id/userPassword"
+        style="@style/SignUpEditText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="Password (required)"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPasswordHeader" />
+
+    <TextView
+        android:id="@+id/userSecurityHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:text="What was your childhood nickname?"
+        app:layout_constraintStart_toStartOf="@+id/userSecurity"
+        app:layout_constraintTop_toBottomOf="@+id/userPassword" />
+
+    <EditText
+        android:id="@+id/userSecurity"
+        style="@style/SignUpEditText"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="Answer (required)"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userSecurityHeader" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_selector_shape"
+        android:text="Create An Account"
+        android:textAllCaps="false"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/userSecurity"
+        app:layout_constraintTop_toBottomOf="@+id/userSecurity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
